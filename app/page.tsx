@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Github, Linkedin, Youtube, Instagram, Facebook, Factory} from 'lucide-react'
+import { Github, Linkedin, Youtube, Instagram, Facebook, Factory } from 'lucide-react'
 import { TerminalLink } from '@/components/ui/terminal-link'
 
 export default function TerminalPortfolio() {
@@ -43,7 +43,7 @@ export default function TerminalPortfolio() {
               <span className="cursor"></span>
             </div>
             <p className="text-sm md:text-base terminal-line opacity-90 leading-relaxed">
-              Software Engineering student at UNMSM. Passionate about transforming business challenges into efficient technological solutions. Focused on the complete development cycle, from requirement analysis and client communication to coding and deployment. Problem solver agnostic to technology. Code that lasts.
+              Software Engineering student at UNMSM focused on connecting business needs with technological solutions. Hands-on experience building automations (Playwright), managing e-commerce (WordPress/Kinsta), and developing custom ERP modules (Odoo). Problem solver agnostic to technology. Code that lasts.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
               <TerminalLink href="https://github.com/frank777ch" icon={Github} label="github" />
@@ -78,16 +78,18 @@ export default function TerminalPortfolio() {
                 <div className="font-bold mb-2 text-accent">Backend & DB</div>
                 <div className="opacity-80 space-y-1">
                   <div>Python | Django</div>
-                  <div>Node.js | JS</div>
+                  <div>Node.js | PHP</div>
                   <div>C++ | C#</div>
-                  <div>MySQL | Oracle | SQLite</div>
+                  <div>PostgreSQL | MySQL</div>
+                  <div>Oracle | MongoDB | SQLite</div>
                 </div>
               </div>
               <div>
-                <div className="font-bold mb-2 text-accent">Frontend</div>
+                <div className="font-bold mb-2 text-accent">Frontend & Testing</div>
                 <div className="opacity-80 space-y-1">
-                  <div>React Native</div>
                   <div>JavaScript</div>
+                  <div>Playwright (RPA)</div>
+                  <div>React Native</div>
                   <div>Tailwind CSS</div>
                   <div>HTML | CSS</div>
                 </div>
@@ -95,7 +97,8 @@ export default function TerminalPortfolio() {
               <div>
                 <div className="font-bold mb-2 text-accent">Infra & Tools</div>
                 <div className="opacity-80 space-y-1">
-                  <div>Docker | Git/GitHub</div>
+                  <div>Odoo ERP | WordPress</div>
+                  <div>Docker | GitHub Actions</div>
                   <div>Linux (Pop!_OS/Ubuntu)</div>
                   <div>ESP32 | Arduino IDE</div>
                   <div>Figma | Live2D</div>
@@ -105,21 +108,48 @@ export default function TerminalPortfolio() {
           </div>
         </section>
 
-        {/* PROJECTS */}
+        {/* WORK HISTORY & PROJECTS */}
         <section className="mb-12">
           <div className="terminal-line text-xs md:text-sm opacity-70 mb-4">
-            $ cd projects && ls -la
+            $ cd work_history && ls -la
           </div>
-          <div id="projects" className="pl-4 border-l-2 border-current space-y-4">
+          <div id="projects" className="pl-4 border-l-2 border-current space-y-6">
+            
+            {/* Experience 1 */}
+            <div className="terminal-line text-xs md:text-sm">
+              <div className="font-bold hover:text-accent transition-colors cursor-pointer">
+                → ./Vape_Station_Systems
+              </div>
+              <div className="opacity-70 text-xs ml-4 mt-1">
+                tech: Odoo v18 | Python | Playwright | WordPress | XML | JS
+              </div>
+              <div className="opacity-80 text-xs ml-4 mt-1">
+                Systems Assistant. Developing custom ERP modules to adapt business requirements. Built an RPA bot for logistics data extraction (Shalom) and integrated it directly into the WordPress checkout flow.
+              </div>
+            </div>
+
+            {/* Experience 2 */}
+            <div className="terminal-line text-xs md:text-sm">
+              <div className="font-bold hover:text-accent transition-colors cursor-pointer">
+                → ./OGBU_IT_Infrastructure
+              </div>
+              <div className="opacity-70 text-xs ml-4 mt-1">
+                tech: Oracle | MySQL | Networking | Hardware
+              </div>
+              <div className="opacity-80 text-xs ml-4 mt-1">
+                IT Assistant. Executed critical data migration and replication between cloud Oracle databases and local MySQL instances to ensure high availability for ticket validation systems.
+              </div>
+            </div>
+
             {/* Project 1 */}
             <div className="terminal-line text-xs md:text-sm">
               <div className="font-bold hover:text-accent transition-colors cursor-pointer">
-                → AgriSense_IoT_System
+                → ./AgriSense_IoT_System
               </div>
               <div className="opacity-70 text-xs ml-4 mt-1">
                 tech: Python | C++ | React Native | Django | ESP32 | InfluxDB
               </div>
-              <div className="opacity-80 text-xs ml-4">
+              <div className="opacity-80 text-xs ml-4 mt-1">
                 Led team to build environmental monitoring for agriculture. Real-time sensor data collection via ESP32. Handled time-series data visualization optimizing relational database loads.
               </div>
             </div>
@@ -127,44 +157,26 @@ export default function TerminalPortfolio() {
             {/* Project 2 */}
             <div className="terminal-line text-xs md:text-sm">
               <div className="font-bold hover:text-accent transition-colors cursor-pointer">
-                → EvaEduca_Platform
+                → ./EvaEduca_Platform
               </div>
               <div className="opacity-70 text-xs ml-4 mt-1">
                 tech: JavaScript | HTML/CSS | Django | ChatGPT API | Live2D
               </div>
-              <div className="opacity-80 text-xs ml-4">
+              <div className="opacity-80 text-xs ml-4 mt-1">
                 Full stack educational automation. Engineered an interactive 2D virtual agent, syncing ChatGPT AI responses with voice and gestures for enhanced UX.
               </div>
             </div>
 
-            {/* Project 3 */}
-            <div className="terminal-line text-xs md:text-sm">
-              <div className="font-bold hover:text-accent transition-colors cursor-pointer">
-                → ESLIDER_Academic_System
-              </div>
-              <div className="opacity-70 text-xs ml-4 mt-1">
-                tech: Node.js | MySQL | Tailwind CSS | JavaScript
-              </div>
-              <div className="opacity-80 text-xs ml-4">
-                Functional Analyst & Developer. Automated enrollment and grading processes. Translated complex business logic into clear technical specs through flowcharts.
-              </div>
-            </div>
           </div>
         </section>
 
         {/* CONTACT */}
         <section className="border-t border-current pt-8">
           <div className="terminal-line text-xs md:text-sm space-y-3">
-            <div className="opacity-70">user@engineer:~$ exit</div>
+            <div className="opacity-70">user@engineer:~/work_history$ exit</div>
             <div className="flex flex-wrap gap-4">
               <a href="mailto:fcondorh514@gmail.com" className="hover:text-accent transition-colors">
                 [ email ]
-              </a>
-              <a href="https://www.linkedin.com/in/frank-kevin-condor-huarhuachi/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                [ linkedin ]
-              </a>
-              <a href="https://github.com/frank777ch" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                [ github ]
               </a>
             </div>
             <div className="opacity-50 pt-4">
